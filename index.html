@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Moja web stranica</title>
+    <!-- <style>
+        h1 {
+            color:red; 
+        }
+    </style> -->
 </head>
 <body>
-<h1>Naslov1</h1> 
+<h1>Naslov 1</h1>  
 <h2>Naslov2</h2>
 <h3>Naslov3</h3>
 <h4>Naslov4</h4>
@@ -23,7 +29,7 @@ Eos laboriosam voluptate impedit. Aliquid modi vel quis nemo natus amet quisquam
 Doloribus similique quisquam quia totam consectetur, tempore ratione reprehenderit, eius aliquid necessitatibus architecto pariatur quas beatae eaque, temporibus magnam nesciunt accusantium nam? Sed soluta pariatur saepe dolorum itaque, esse quaerat?
 Molestiae, asperiores sit commodi aut similique dolores magnam veniam atque accusamus consequatur dignissimos mollitia id iste saepe consectetur amet tempora, praesentium odit ullam reprehenderit veritatis, nihil iure possimus! Quod, nisi?</p>
 <!-- Ovdje kreće pragraf -->
-<pre>ovo je prvi red 
+<p class="paragraf1">ovo je prvi red 
     ovo je drugi red 
     ovo je treći red 
     <p> Jučer smo igrali <strong>loše</strong>  loše, jako <em>loše</em> to nije bilo <mark>prepoznatljivo</mark> prepoznatljivo. 
@@ -90,5 +96,195 @@ Molestiae, asperiores sit commodi aut similique dolores magnam veniam atque accu
     <li></li>
     <li></li>
 </ol>
-</body>
+
+<h3>Tablice u HTML</h3>
+
+
+<table border="1"> <caption>Tablica1</caption>
+    <tr>
+     <th>1.red, ćelija 1 </th>
+     <th>1.red, ćelija 2</th>
+</tr>
+<tr>
+    <td>1.red, ćelija 1 </td>
+    <td>1.red, ćelija 2</td>
+ </tr>
+<tr>
+     <td>1.red, ćelija 1 </td>
+     <td>1.red, ćelija 2</td>
+</tr> 
+</table> 
+<br>
+<hr>
+<br>
+
+<table border="1"> <caption>Tablica2</caption>
+    <tr>
+     <th>1.red, ćelija 1 </th>
+     <th>1.red, ćelija 2</th>
+</tr>
+<tr>
+    <td>1.red, ćelija 1 </td>
+    <td>1.red, ćelija 2</td>
+ </tr>
+<tr>
+     <td>1.red, ćelija 1 </td>
+     <td>1.red, ćelija 2</td>
+</tr> 
+</table>
+
+<br>
+<hr>
+<br>
+
+<table border="1">
+    <tr>
+        <th colspan="3">red 1, ćelija 1,2 i 3</th>
+    </tr>
+    <tr>
+        <td>2. red, ćelija1</td>
+        <td>2.red, ćelija2</td>
+        <td>2.red, ćelija3</td>
+    </tr>
+    <tr>
+        <td>3.red, ćelija1</td>
+        <td colspan="2">3.red, ćelija 2 i 3</td>
+    </tr>
+
+</table>
+
+<br>
+<hr>
+<br>
+
+<table border="1">
+<tr>
+<th rowspan="3">red1, ćelija1</th>
+<th>1.red, ćelija2</th>
+<th>1.red, ćelija3</th>
+</tr>
+<tr>
+<td rowspan="2">red 2, ćelija1</td>
+<td>red2, ćelija3</td>
+</tr>
+<tr>
+<td>3.red, ćelija 3</td>
+</tr>
+
+</table>
+
+<br>
+<hr>
+<br>
+
+<table border="1">
+    <caption>Raspored</caption>
+
+<tr>
+<th></th>
+<th>9am</th>
+<th>10am</th>
+<th>11am</th>
+<th>12am</th>
+
+</tr>
+<tr>
+<td>Monday</td>
+<td colspan="2">Geography</td>
+<td>Math</td>
+<td>ART</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td colspan="3">Gym</td>
+<td>Home</td>
+</tr>
+</table>
+
+<h3>Forme(obrasci) u HTML</h3>
+
+<form name="obrazac1" method="post" autocomplete="off"
+action="link1.html">
+<p>
+    <label for="Ime">Ime i prezime:</label>
+    <input id="Ime" type="" size="15" maxlength="15" placeholder="Unesi ime..." required>
+    <br>
+    <br>
+    <label for="">E-mail adresa:</label>
+    <input type="email" name="email" size="15">
+    <br>
+    <br>
+    <label for="pass">Vaša lozinka:</label>
+    <input type="password" name="password" id="pass" required >
+    <br>
+    <br>
+    <label for="mob">Unesi broj telefona:</label>
+    <input type="tel" name="mobitel" id="mob" pattern="[0-9]{01,10}" maxlength="10">
+<br>
+<br>
+<label for="broj">Unesi brojeve</label>
+<input type="number" name="brojevi" id="broj">
+<br>
+<br>
+<label for="color">Unesi boju</label>
+<input type="color" name="boje" id="color">
+<br>
+<br>
+<p>Izaberi programski jezik:</p> 
+<input type="radio" name="language" id="Html" value="Html">
+<label for="Html">HTML</label>
+<br>
+<input type="radio" name="language" id="css" value="CSS">
+<label for="CSS">CSS</label>
+<br>
+<input type="radio" name="language" id="Java schript" value="Java schript">
+<label for="Java schript">JavaScript</label>
+<br>
+<br>
+<input type="submit" value="Pošalji">
+<input type="reset" value="Poništi">
+</p>
+
+<br>
+<br>
+<hr>
+ <h3>HTML form</h3>
+ <hr>
+ <label for="First name:">First name:</label>
+ <input type="name" id="First name:" size="15">
+<br>
+<br>
+
+<label for="Last name:">Last name:</label>
+<input type="surname" id="Last name:" size="15">
+
+<br>
+<br>
+ <label for="E-mail">E-mail</label>
+ <input type="email" id="E-mail" size="15">
+ <br>
+ <br>
+<input type="radio" name="language" id="Male" value="Male">
+<label for="Male">Male</label>
+<input type="radio" name="language" id="Female" value="Female">
+<label for="Female">Female</label>
+<br>
+<br>
+
+ <input type="submit" value= "Submit">
+ <br>
+ <br>
+ <input type="reset" value="Reset">
+
+ <hr>
+
+
+</form>
+<br>
+<h3>Ugradnja videozapisa</h3>
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/j9CvUtbViYU?si=x5l3Otcy3cGoaqRG" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body> 
 </html>
