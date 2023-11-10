@@ -1,9 +1,35 @@
-h1{
-    color: blueviolet;
+html {
+    font-size: 12px;
 }
 
-p{
-    color: blueviolet;
+body {
+    background-color: rgb(128, 104, 151);
+} 
+
+h3 {
+    font-family: 'Poppins', sans-serif;
 }
-.paragraf1 {}
-    
+
+h6 {
+    font-size: medium;
+    text-align: center;
+}
+
+   
+h1 {
+    color: #000;
+}
+
+.paragraf1 {
+    color: blue;
+    font: size 30px; 
+    font-weight: 700;
+
+} 
+
+#paragraf2 {
+    color: brown;
+   font-size: 2rem;
+   font-weight: bolder;
+}
+
