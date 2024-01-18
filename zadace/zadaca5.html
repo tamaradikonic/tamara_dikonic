@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="tamara dikonic">
+    <meta name="opis" content="recepti">
+    <title>Recepti</title>
+    <style>
+        h1 {
+            color: rgb(237, 32, 186);
+            font-size: 40px;
+            font-style: oblique;
+            text-align: center;
+        }
+        body {
+            background-color: aliceblue;
+        }
+        .paragraf {
+            font-family: Arial, Helvetica, sans-serif ;
+            color: rgb(10, 5, 81);
+            font-weight: bold;
+        }
+        h4 {
+            font-weight: bolder;
+            color: darkgoldenrod;
+            font-size: 30px;
+        }
+        .lista {
+        list-style: square;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        background-color: aquamarine;
+        font-weight: bold;
+        }
+        h2 {
+            color: rgb(237, 32, 186);
+            font-style: italic;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .lista1 {
+            font-size: 20px;
+            font-weight: bolder;
+            color: crimson;
+            list-style-type: square;
+        }
+        h3 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 35px;
+            font-weight: 800;
+            color: rgb(64, 2, 2);
+            background-color: rgb(225, 241, 197);
+        }
+        .container {
+            display: grid;
+            gap: 10px;
+        }
+        .one {
+            grid-column: span 12;
+            grid-row: span 5;
+            background-color: grey;
+           
+        }s
+        .two {
+            grid-column: span 8;
+            grid-row: span 7;
+            background-color: grey;
+           
+        }
+        .three {
+            grid-column: span 4;
+            grid-row: span 7;
+            background-color: grey;
+           
+        }
+        
+        @media (max-width: 480px) {
+            .one {
+                grid-row: span 12;
+                grid-column: span 12;
+            }
+            .two {
+                grid-row: span 12;
+                grid-column: span 12;
+            }
+            .three {
+                grid-row: span 12;
+                grid-column: span 12;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Moja knjiga s receptima </h1>
+    <p class="paragraf">
+    Svi recepti naslijeđeni su od moje mame i bake 
+    </p>
+     <h2>Jela</h2>
+    <ul class="lista1">
+        <li>Čorbanac</li>
+        <li>Sarma</li>
+    </ul>
+    <h2>Kolači</h2>
+    <ul class="lista1">
+        <li>Šeherezada</li>
+        <li>Mađarica</li>
+    </ul>
+    <h3>Čorbanac</h3>
+    <h4>Sastojci</h4>
+    <ul class="lista">
+        <li>6 glavica crvenog luka</li>
+        <li>3 glavice češnjaka</li>
+        <li>3 mrkve</li>
+        <li>500g divljači</li>
+        <li>500g junetine</li>
+        <li>1kg svinjetine</li>
+        <li>Voda </li>
+        <li>Pasirana rajčica</li>
+        <li>Vegeta</li>
+        <li>Biber</li>
+        <li>Lovorov list</li>
+        <li>Mljevena paprika</li>
+    </ul>
+    <h4>Priprema</h4>
+    <p class="paragraf"> Crveni luk brkvu i češnjat izribati i dinstati. po potrebi dodavati vode.
+         Nakon 15-20 minuta dodati meso nasjeckano na kockice te dinstati sa lukom. 
+         Dodati vegete, bibera lovorovog lista, slatke paprike te vode i pustit da se kuha na laganoj vatri. 
+         Kada meso bude skoro gotovo dodati pasirane rajčice. 
+    </p>
+    <h3>Sarma </h3>
+    <h4>Sastojci</h4>
+    <ul class="lista">
+        <li>700g mljevenog mesa</li>
+        <li>1 glavica kiselog kupusa</li>
+        <li>100g riže</li>
+        <li>sol i papar</li>
+        <li>lovorov list</li>
+        <li>pasirana rajčica</li>
+        <li>češnjak</li>
+    </ul>
+    <h4>Priprema</h4>
+    <p class="paragraf">Glavici kupusa odvojiti listove i izrezati korijen na listu.
+          Češnjak i luk sitno isjeckati. Luk prodinstati na malo ulja da uvene.
+          U mljeveno meso dodati sol, papar, crvenu papriku, dinstani luk i rižu te dobro promiješati, a po potrebi dodati malo vode.
+          U listove kupusa zamotati meso i presaviti rubove. Ostatak kupusa narezati na rezance, složiti u lonac i uz malo vode (ovisno o tvrdoći mesa) sve zajedno kuhati 1,5 sati na laganoj vatri
+
+        Pročitajte više na: https://gastro.24sata.hr/spajza/kako-napraviti-savrsenu-sarmu-donosimo-ti-trikove-i-recept-24435
+    </p>
+
+    <h3>Šeherezada</h3>
+    <h4>Sastojci za biskvit</h4>
+    <ul class="lista">
+        <li>Turski keks</li>
+        <li>Šlag</li>
+        <li>3 pudinga karamele</li>
+        <li>Margarin</li>
+     
+    
+    </ul>
+    <h4>Priprema</h4>
+   <p class="paragraf">
+    Napraviti puding karamele te kada se ohladi dodati margarina i izmiksati. Napraviti šlag.
+    Poredati kekse na pladanj zatim namazati puding karamele te šlag. Postupak ponavljati sve dok imate keksa. 
+    Kolač na kraju možete ukrasiti ostatkom šlaga.  
+   </p>
+   <br>
+   <h3>Mađarica</h3>
+   <h4>Sastojci za biskvit</h4>
+   <ul class="lista">
+    <li>KORE 50 dkg glatkog brašna
+    <li>20 dkg u prahu</li>
+    <li>2 jaja</li>
+    <li>2 margarina</li>
+    <li>pzp</li>
+    <li>1l mlijeka</li>
+    <li>9dkg oštrog brašna</li>
+    <li>20dkg šečera</li>
+    <li>2 čokolade</li>
+   </ul>
+  
+   <h4>Priprema</h4>
+   <p class="paragraf">
+  Ispeći pet jednakih kora. U mlijeko staviti čokoladu, pustiti da mlijeko zakipi. 
+  Brašno i šečer razmutiti u malo mlijeka i ukuhati kao puding u mlijeko i čokoladu.
+  Kuhati nekoliko minuta, maknuti s vatre i odma u kipuće dodati margarin na listiće i dobro miješati dok se sav margarin ne rastopi.
+  Kore filati sa vrućom kremom OBAVEZNO. Ostaviti da se mađarica ohladi i staviti neki teret na nju te ostaviti tako najmanje 6 sati.
+  Na kraju ide čokoladna glazura koju obavezno treba kuhati na pari .
+   </p>
+   <div class="container">
+    <div class="one">A</div>
+    <div class="two">B</div>
+    <div class="three">C</div>
+   </div>
+</body>
+</html>
